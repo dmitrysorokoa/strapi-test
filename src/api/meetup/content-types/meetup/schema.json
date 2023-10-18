@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "meetups",
+  "info": {
+    "singularName": "meetup",
+    "pluralName": "meetups",
+    "displayName": "Meetup",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subject": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "author": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}
