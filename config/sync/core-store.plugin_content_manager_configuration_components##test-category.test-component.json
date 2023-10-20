@@ -1,0 +1,57 @@
+{
+  "key": "plugin_content_manager_configuration_components::test-category.test-component",
+  "value": {
+    "uid": "test-category.test-component",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "testfield",
+      "defaultSortBy": "testfield",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "testfield": {
+        "edit": {
+          "label": "testfield",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "testfield",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "testfield"
+      ],
+      "edit": [
+        [
+          {
+            "name": "testfield",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}
